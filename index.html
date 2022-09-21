@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>JS Simple Calculator</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="160carac" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+   
+    <main></main>
+    <script src="script.js"></script>  <!-- Bonne pratique est de le mettre à la fin du body-->
+  </body>
+</html>
+
+<!-- Soluce yannick
+do {
+    firstValue = parseInt(prompt("Enter firstValue :", "0"), 10);
+    if (isNaN(firstValue)){
+        alert("Il faut un chiffre bordel");
+    } 
+}
+while (isNaN(firstValue));
+console.log(firstValue); 
+
+//// Operator
+const operators =  ['+', '-', '*', '/'];
+do {
+    operator = prompt("Enter operator", "");
+    if (!operators.includes(operator)){
+        alert("Il faut un operateur");
+    }
+}
+while (!operators.includes(operator));
+console.log(operator);
+
+//// Second Value
+do {
+    secondValue = parseInt(prompt("Enter secondValue :", "0"), 10);
+    if (isNaN(secondValue)){
+        alert("Il faut un chiffre bordel");
+    } 
+}
+while (isNaN(secondValue));
+console.log(secondValue);
+
+console.log(  )
