@@ -4,7 +4,7 @@ let answer = "";
 let outOfRange;
 console.log(random);
 do {
-    outOfRange = false;
+    outOfRange = 0;
     answer = parseInt(prompt("Give me a integer number between 1 and 100"));
 
     if (isNaN(answer)) {
@@ -18,7 +18,7 @@ do {
         answer = answer
     }
 }
-while (isNaN(answer) || outOfRange === false);
+while (isNaN(answer) || outOfRange === true);
 
 do {
     if (answer < random) {
