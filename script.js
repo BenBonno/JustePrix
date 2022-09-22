@@ -23,14 +23,16 @@ do {
 while (isNaN(answer) || outOfRange === 1);
 console.log(answer);
 do {
+
     if (answer < random) {
-        answer = prompt("It is more");
+        answer = parseInt(prompt("It is more"));
     }
-    if (answer > random) {
-        answer = prompt("It is less");
+    else if (answer > random) {
+        answer = parseInt(prompt("It is less"));
     }
 
 }
-while (answer !== random)
-prompt(`Well done !${playerName}`);
+while (!isNaN(answer) && answer !== random);
+
+alert(`Well done ! ${playerName}`);
 
